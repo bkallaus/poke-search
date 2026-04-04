@@ -52,16 +52,27 @@
   box-shadow: var(--clay-shadow);
 }
 
-.actionBtn:hover {
+.actionBtn:hover:not(:disabled) {
   transform: rotateZ(-4deg) translateY(-4px); /* Slightly less dramatic for small utility buttons */
   box-shadow: var(--clay-shadow-hover);
 }
 
-.actionBtn.undo:hover {
+.actionBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: var(--clay-shadow);
+}
+
+.actionBtn.copy:hover:not(:disabled) {
+  background-color: var(--swatch-matcha-300);
+}
+
+.actionBtn.undo:hover:not(:disabled) {
   background-color: var(--swatch-lemon-500);
 }
 
-.actionBtn.clear:hover {
+.actionBtn.clear:hover:not(:disabled) {
   background-color: var(--swatch-pomegranate-400);
   color: var(--pure-white);
   border-color: var(--swatch-pomegranate-400);
