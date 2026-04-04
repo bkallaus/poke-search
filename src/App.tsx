@@ -6,6 +6,7 @@ import { StandardAttributeButton } from './components/StandardAttributeButton/St
 import { IVSelector } from './components/IVSelector/IVSelector';
 import { CPSelector } from './components/CPSelector/CPSelector';
 import { RangeSelector } from './components/RangeSelector/RangeSelector';
+import { UsefulStringsSection } from './components/UsefulStringsSection/UsefulStringsSection';
 import { categories } from './constants/data';
 import styles from './App.module.css';
 
@@ -52,6 +53,8 @@ function App() {
             )}
           </CategorySection>
         ))}
+        
+        <UsefulStringsSection />
       </main>
 
       <footer className={styles.footer}>

@@ -28,6 +28,8 @@ export const categories: Category[] = [
       { label: 'Hatched', value: 'hatched' },
       { label: 'Traded', value: 'traded' },
       { label: 'Lucky', value: 'lucky' },
+      { label: 'Special BG', value: 'specialbackground' },
+      { label: 'Location BG', value: 'locationbackground' },
     ],
   },
   {
